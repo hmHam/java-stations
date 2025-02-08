@@ -4,12 +4,35 @@ public class Main {
     public static void question1(int subtotal) {
         // Station 8 問題(1)
         // ここから
+        int total = subtotal;
+        int shipPrice = 800;
+        if (subtotal < 10000) {
+            System.out.println("送料" + shipPrice + "円を追加します");
+            total += shipPrice;
+        }
+        System.out.println(total);
         // ここまで
     }
 
     public static void question2(int categoryId) {
         // Station 8 問題(2)
         // ここから
+        switch (categoryId) {
+            case 1:
+                System.out.println("食品");
+                break;
+            case 2:
+                System.out.println("家電");
+                break;
+            case 3:
+                System.out.println("家具");
+                break;
+            case 99:
+                System.out.println("その他");
+                break;
+            default:
+                break;
+        }
         // ここまで
     }
 
